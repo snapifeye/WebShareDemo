@@ -1,0 +1,253 @@
+<html>
+	<head>
+
+		<!-- Meta
+================================================== -->
+
+<!--Twitter Meta-->
+<meta name="twitter:card" content="photo" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:URL" content="http://events.snapifeye.com/WebShareDemo"/>
+<meta property="og:title" content="My picture"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content=""/>
+<meta property="og:description"        content="My photograph" />
+<meta property="article:author"        content="Snapifeye" />
+<meta property="article:publisher"     content="Snapifeye" />
+
+
+<!-- Meta / End -->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<!-- Need this -->
+		<script type="text/javascript" src="http://events.snapifeye.com/snapifeye-widget/snapifeye-widget-all.min.js"></script>
+
+		<style>
+		html, body { margin: 0px; padding: 0px;background:#70abce;!important }
+
+			.sn-widget-gallery--info--event-name{
+				position: absolute;
+  			color: #FFFFFF;
+			  width: 100%;
+			  top: 10px !important;
+			  height: 20px !important;
+			  margin-top: 10px !important;
+			  font-size: 30px !important;
+			  line-height: 32px !important;
+			  text-align: center;
+}
+
+			.sn-widget-gallery--image{
+				position: relative;
+  			Height:auto;
+				width:100%;
+				max-width: 500px!important;
+			  max-height: 500px!important;
+
+}
+
+			.sn-widget-gallery--info-container {
+				display: none !important;
+				position: fixed !important;
+				top: 0px !important;
+				left:0px !important;
+				font-family: Helvetica;
+			}
+
+			.sn-widget-gallery--image-container{
+				position: relative !important;
+  			top: 0px !important;
+  			bottom: 0px !important;
+  			right: 0px !important;
+  			left: 0% !important;
+				padding:25px;
+
+
+			}
+
+				.sn-widget-wrapper{
+				 background:#70abce !important;
+				 height:auto !important;
+
+			}
+
+			.dummy {
+				margin-top: 100%;
+			}
+
+			.smarty {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+
+			.data-wrapper {
+				position: absolute;
+				width: 100%;
+				height: auto;
+
+			}
+
+
+			.photo-meta-first-name,
+			.photo-meta-last-name {
+				font-style: italic;
+				font-family: Helvetica;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				padding: 100px 25px;
+
+				color: #FFFFFF;
+				font-weight: 600;
+				font-size: 33px;
+				line-height: 35px;
+
+			}
+			.photo-question {
+				font-style: italic;
+				font-family: Helvetica;
+
+				color: #FFFFFF;
+				font-weight: 100;
+				font-size: 16px;
+				line-height: 18px;
+			}
+
+			.event-hash-tag {
+				position: absolute;
+				bottom: 200px;
+				right: 50px;
+
+				color: #FFFFFF;
+				font-size: 36px;
+				line-height: 43px;
+				font-family: Helvetica;
+			}
+
+			.sidebar {
+			   position: relative;
+				 padding:25px;
+				 aligh:center;
+	}
+
+				.tickets {
+					width: 45px;
+					height: 250px;
+					position: fixed;
+					left: 20%;
+					top: 60%;
+				}
+
+			a.MyButton {
+				display:block;
+				box-shadow: 6px 6px 8px #2d2d2d;
+				font-size: 32px;
+				color: white;
+				text-align:center;
+				line-height:71px;
+				width:auto;
+				max-width:500px;
+				height:71px;
+				border-radius:3px;
+				align:center;
+				background:#f2653b;
+				font-family: Helvetica;
+			}
+
+
+</style>
+
+		<script type="text/javascript">
+
+			function resolveFirstName(data) {
+				console.log("data", data);
+
+				var photo = data.photo
+				var fullName = (photo.meta || {}).name;
+				if (fullName) {
+					fullName = fullName.split(" ")[1];
+				}
+				return fullName;
+			}
+
+			function resolveEventName(data) {
+				return data.event.name;
+			}
+
+			function resolveQuestion(data) {
+				console.log("data", data);
+
+
+				return data.photo.caption;
+			}
+
+		</script>
+
+	</head>
+	<body style="background:#70abce">
+		<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+FB.init({appId: '616833721713503', status: true, cookie: true,
+xfbml: true});
+};
+(function() {
+var e = document.createElement('script'); e.async = true;
+e.src = document.location.protocol +
+'//connect.facebook.net/en_US/all.js';
+document.getElementById('fb-root').appendChild(e);
+}());
+</script>
+
+
+		<div class="sidebar"> <div class="col-md-6"><center>
+
+			<h2 style="color:#ff5300; font-family: Helvetica; padding:0px;">Share your Photo!<h2>
+
+
+		<!-- Facebook -->
+
+		<script language="javascript">
+    function fbshareCurrentPage()
+    {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
+</script>
+
+<a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"><img src = "http://thefitnessdefinition.com/wp-content/plugins/share-locker//images/fb-share-button.png"></a></a>
+
+
+
+		<!-- Twitter -->
+		 <a href="https://twitter.com/share" class="twitter-share-button" data-text="Hello from Milwaukee" data-via="Snapifeye" data-size="large" data-count="none" data-hashtags="Snapifeye" data-dnt="true">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+		<!-- Pintrist -->
+		<a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fevents.snapifeye.com%2FSnapifeye%2F&media=http%3A%2F%2Fsnapifeye.com%2Fwp-content%2Fuploads%2F2015%2F02%2F10846372_10154971097780226_387044320502024228_n.jpg&description=We%20Are%20Snapifeye" data-pin-do="buttonPin" data-pin-config="none" data-pin-color="red" data-pin-height="28"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" /></a>
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+		<!-- Email -->
+		<a href="mailto:_blank?body=Check out my picture http://marquette.snapifeye.com/WebShareDemo=We're in Milwaukee" alt="email;" padding=0px 0px 10px 0px;"><img src="https://www.getzixmail.com/images/button-send-email.png" alt="Facebook" /></a></center>
+
+	</div></div class="col-md-6">
+
+	<div class="col-md-6"><center><a class="MyButton Orange" href="http://bit.ly/_Snapifeye__" target="_blank" alt="Tickets">Learn More About Snapifeye</a></div class="col-md-6">
+
+		<center><snapifeye-widget class="50%" params="eventId: 85, period: 400000, custom: false">
+		</snapifeye-widget>
+
+
+		<script type="text/javascript">
+	(function(d){
+	    var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+	    p.type = 'text/javascript';
+	    p.async = true;
+	    p.src = '//assets.pinterest.com/js/pinit.js';
+	    f.parentNode.insertBefore(p, f);
+	}(document));
+	</script>
+	</body>
+</html>
