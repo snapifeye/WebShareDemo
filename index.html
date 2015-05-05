@@ -230,7 +230,15 @@ document.getElementById('fb-root').appendChild(e);
 <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
 		<!-- Email -->
-		<a href="mailto:_blank?body=Check out my picture http://events.snapifeye.com/WebShareDemo=We're in Milwaukee" alt="email;" padding=0px 0px 10px 0px;"><img src="http://imgsrv.959theranch.com/image/kfwr2/UserFiles/Image/button_email.png" style="height:30px;width:auto;" alt="Email" /></a></center>
+		
+		<script language="javascript">
+        function emailCurrentPage(){
+            window.location.href="mailto:?subject="Check out my photo!"&body="+escape(window.location.href);
+        }
+    </script>
+<body>
+        <a href="javascript:emailCurrentPage()"><img src="http://imgsrv.959theranch.com/image/kfwr2/UserFiles/Image/button_email.png" style="height:30px;width:auto;" alt="Email" /></a>
+		
 
 	</div></div class="col-md-6">
 
