@@ -21,6 +21,12 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
+<script language="javascript">
+        function emailCurrentPage(){
+            window.location.href="mailto:?subject="+document.title+"&body="+escape(window.location.href);
+        }
+    </script>
+
 		<!-- Need this -->
 		<script type="text/javascript" src="http://events.snapifeye.com/snapifeye-widget/snapifeye-widget-all.min.js"></script>
 
@@ -231,12 +237,6 @@ document.getElementById('fb-root').appendChild(e);
 
 		<!-- Email -->
 		
-		<script language="javascript">
-        function emailCurrentPage(){
-            window.location.href="mailto:?subject="Check out my photo!"&body="+escape(window.location.href);
-        }
-    </script>
-<body>
         <a href="javascript:emailCurrentPage()"><img src="http://imgsrv.959theranch.com/image/kfwr2/UserFiles/Image/button_email.png" style="height:30px;width:auto;" alt="Email" /></a>
 		
 
