@@ -236,49 +236,43 @@ document.getElementById('fb-root').appendChild(e);
 			<h2 style="color:#ff5300; font-family: Helvetica; padding:0px;">Share your Photo!<h2>
 
 
-		<!-- Facebook -->
-
-		<script language="javascript">
-    function fbshareCurrentPage()
-    {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
-</script>
-
-<a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"><img src = "http://4.bp.blogspot.com/-ne-G24v59mc/Ucl53ygXkXI/AAAAAAAACXg/jzVl8dP56YM/s1600/facebook-share-buttons.png" style="height:30px;width:auto;"></a></a>
+<!-- Facebook -->
+	<script language="javascript"> 
+	function fbshareCurrentPage()
+    	{window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
+	</script>
+	<a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"><img src = "http://4.bp.blogspot.com/-ne-G24v59mc/Ucl53ygXkXI/AAAAAAAACXg/jzVl8dP56YM/s1600/facebook-share-buttons.png" style="height:30px;width:auto;"></a></a>
 
 
 
-		<!-- Twitter -->
-		 <a href="https://twitter.com/share" class="twitter-share-button" data-text="We're with @Snapifeye!" data-via="Snapifeye" data-size="large" data-count="none" data-hashtags="EventTech" data-dnt="true">Tweet</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!-- Twitter -->
+	<a href="https://twitter.com/share" class="twitter-share-button" data-text="We're with @Snapifeye!" data-via="Snapifeye" data-size="large" data-count="none" data-hashtags="EventTech" data-dnt="true">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-		<!-- Pintrist -->
+<!-- Pintrist -->
 	<a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-height="28"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" /></a>
-<!-- Please call pinit.js only once per page -->
-<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+	<!-- Please call pinit.js only once per page -->
+	<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
 
-		<!-- Linkedin -->
-<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/Share"></script>
+<!-- Linkedin -->
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+	<script type="IN/Share"></script>
 
-		<!-- Google Plus -->
-<!-- Place this tag where you want the share button to render. -->
-<div class="g-plus" data-action="share" data-annotation="none" data-height="24"></div>
+<!-- Google Plus -->
+	<!-- Place this tag where you want the share button to render. -->
+	<div class="g-plus" data-action="share" data-annotation="none" data-height="24"></div>
 
-		<!-- Email -->
-		
+<!-- Email -->
         <a href="javascript:emailCurrentPage()"><img src="http://imgsrv.959theranch.com/image/kfwr2/UserFiles/Image/button_email.png" style="height:30px;width:auto;" alt="Email" /></a>
 		
+</div></div class="col-md-6">
 
-	</div></div class="col-md-6">
-
-
-
-		<center><snapifeye-widget class="50%" params="eventId: 85, period: 4000, custom: false">
-		</snapifeye-widget>
+<!-- Snapifeye Widget -->
+<center><snapifeye-widget class="50%" params="eventId: 85, period: 4000, custom: false"></snapifeye-widget>
 
 
-		<script type="text/javascript">
+	<script type="text/javascript">
 	(function(d){
 	    var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
 	    p.type = 'text/javascript';
