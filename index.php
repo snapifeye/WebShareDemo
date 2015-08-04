@@ -7,7 +7,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:title" content="My photo from Lili &amp; Roberts Wedding"/>
 <meta property="og:type" content="article"/>
-<meta property="og:image" content="https://i.ytimg.com/vi/LPmCcvE9yuw/mqdefault.jpg">
+<?php
+// Check to see if an image ID was passed in the URI
+// example: http://events.snapifeye.com/WebShareDemo/?image=<IMAGE ID>
+if (!empty($_GET['image']))
+{
+	// TODO: Add code to place actual image into og:image metadata
+	echo "<!-- PHP is working -->";
+	echo "<meta property=\"og:image\" content=\"https://i.ytimg.com/vi/LPmCcvE9yuw/mqdefault.jpg\">";
+}
+else
+{
+	echo "<meta property=\"og:image\" content=\"https://i.ytimg.com/vi/LPmCcvE9yuw/mqdefault.jpg\">";
+}
+?>
 <meta property="og:description"        content="Having a great time at Lili and Roberts Wedding! Check out my photo here.  " />
 <meta property="article:author"        content="Snapifeye" />
 <meta property="article:publisher"     content="Snapifeye" />
