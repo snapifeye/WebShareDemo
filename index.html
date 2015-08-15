@@ -172,14 +172,6 @@
 				display:block;
 			}
 
-			#custom-tweet-button a {
-				display:block;
-			}
-
-			#custom-pin-button a {
-				display:block;
-			}
-
 			@media (min-width: 1079px){
 				.sidebar {
 					display: none;
@@ -270,20 +262,12 @@ document.onload = function() {
 
 </script>
 
-
+</div>
 <!-- Pinterest -->
-<a class="custom-pin-button">
-	<a id="pin_button"
-	href="http://www.pinterest.com/pin/create/button/" target="_blank"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Pintrist.jpg?token=AJvWvAXBToElrCHrkJZ4LMgn2BQoeexOks5V19yewA%3D%3D" alt="pinterest" style="height:75px; Width;100px;" /> </a>
-</a>
+<a href='javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());'><img src='https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Pintrist.jpg?token=AJvWvAXBToElrCHrkJZ4LMgn2BQoeexOks5V19yewA%3D%3D' style="height:75px;width:75px;"/></a>
 
-<script type=“text/javascript>
 
-document.onload = function() {
-  var a = document.getElementById("pin_button");
-  a.href = “twitter.com?share_url” + window.location.href;
-};
-</script>
+</div class="col-md-6">
 
 
 <!-- Snapifeye Widget -->
