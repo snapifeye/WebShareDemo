@@ -168,6 +168,10 @@
 				 align:center;
 			}
 
+			#custom-tweet-button a {
+				display:block;
+			}
+
 			@media (min-width: 1079px){
 				.sidebar {
 					display: none;
@@ -244,16 +248,9 @@ document.getElementById('fb-root').appendChild(e);
         <a href="javascript:emailCurrentPage()"><img src="email.jpg" style="height:100px;width:auto;" alt="Email" /></a>
 
 <!-- Twitter -->
-
-<style type="text/css" media="screen">
-  #custom-tweet-button a {
-    display:block;
-  }
-</style>
-
-
 <a class="custom-tweet-button">
-  <a href="http://twitter.com/share?url=http%3A%2F%2Fdev.twitter.com%2Fpages%2Ftweet-button" target="_blank"><img src="twitter.jpg" alt="Twitter" style="height:100px; Width;100px;" /></a>
+  <a id=“twitter_button”
+ href="http://twitter.com/share" target="_blank"><img src="twitter.jpg" alt="Twitter" style="height:100px; Width;100px;" /></a>
 </a>
 
 <p id="addresser"></p>
@@ -261,6 +258,15 @@ document.getElementById('fb-root').appendChild(e);
 <script>
 document.getElementById("addresser").innerHTML =
 "Page location is: " + window.location.href;
+</script>
+
+<script type=“text/javascript>
+
+document.onload = function() {
+  var a = document.getElementById("twitter_button");
+  a.href = “twitter.com?share_url” + window.location.href;
+};
+
 </script>
 
 </div>
