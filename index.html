@@ -269,11 +269,17 @@ document.onload = function() {
 
 <!-- Pinterest -->
 <a class="custom-pin-button">
+	<a id="pin_button"
+	href="http://www.pinterest.com/pin/create/button/" target="_blank"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Pintrist.jpg?token=AJvWvAXBToElrCHrkJZ4LMgn2BQoeexOks5V19yewA%3D%3D" alt="pinterest" style="height:75px; Width;100px;" /> </a>
+</a>
 
-<script type="text/javascript" src="pinimages.js"></script>
- <a href="http://pinterest.com/pin/create/button/?url=yourpageurl.html&amp;media=yourimgurl.html&amp;description=yourdescriptiontext" target="_blank" count-layout="none" onclick="selectPinImage(); return false"><img border="0" <img src='https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Pintrist.jpg?token=AJvWvAXBToElrCHrkJZ4LMgn2BQoeexOks5V19yewA%3D%3D' style="height:75px;width:75px;" title="Pin It"></a>
+<script type=“text/javascript>
 
-</div>
+document.onload = function() {
+  var a = document.getElementById("pin_button");
+  a.href = “twitter.com?share_url” + window.location.href;
+};
+</script>
 
 
 <!-- Snapifeye Widget -->
