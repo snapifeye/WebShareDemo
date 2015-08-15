@@ -227,7 +227,7 @@ document.getElementById('fb-root').appendChild(e);
 </script>
 
 
-		<div class="sidebar"> <div class="col-md-6"><center>
+<div class="col-md-6"><center>
 
 			<h2 style="color:#ff5300; font-family: Helvetica; padding:0px;">Share your Photo!<h2>
 
@@ -243,7 +243,31 @@ document.getElementById('fb-root').appendChild(e);
 <!-- Email -->
         <a href="javascript:emailCurrentPage()"><img src="email.jpg" style="height:100px;width:auto;" alt="Email" /></a>
 
-</div></div class="col-md-6">
+<!-- Twitter -->
+
+<style type="text/css" media="screen">
+  #custom-tweet-button a {
+    display:block;
+  }
+</style>
+
+
+<a class="custom-tweet-button">
+  <a href="http://twitter.com/share?url=http%3A%2F%2Fdev.twitter.com%2Fpages%2Ftweet-button" target="_blank"><img src="twitter.jpg" alt="Twitter" style="height:100px; Width;100px;" /></a>
+</a>
+
+<p id="addresser"></p>
+
+<script>
+document.getElementById("addresser").innerHTML =
+"Page location is: " + window.location.href;
+</script>
+
+</div>
+
+
+</div class="col-md-6">
+
 
 <!-- Snapifeye Widget -->
 <center><snapifeye-widget class="50%" params="eventId: 85, period: 4000, custom: false"></snapifeye-widget>
