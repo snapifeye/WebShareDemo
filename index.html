@@ -172,6 +172,10 @@
 				display:block;
 			}
 
+			#custom-tweet-button a {
+				display:block;
+			}
+
 			@media (min-width: 1079px){
 				.sidebar {
 					display: none;
@@ -241,16 +245,16 @@ document.getElementById('fb-root').appendChild(e);
 	function fbshareCurrentPage()
     	{window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
 	</script>
-	<a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Facebook.jpg?token=AJvWvETp9_xEd4fiwb9lbCvqa4T7CfD1ks5V1y36wA%3D%3D" style="height:100px;width:auto;"></a></a>
+	<a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Facebook.jpg?token=AJvWvETp9_xEd4fiwb9lbCvqa4T7CfD1ks5V1y36wA%3D%3D" style="height:75px;width:auto;"></a></a>
 
 
 <!-- Email -->
-        <a href="javascript:emailCurrentPage()"><img src="email.jpg" style="height:100px;width:auto;" alt="Email" /></a>
+        <a href="javascript:emailCurrentPage()"><img src="email.jpg" style="height:75px;width:auto;" alt="Email" /></a>
 
 <!-- Twitter -->
 <a class="custom-tweet-button">
   <a id=“twitter_button”
- href="http://twitter.com/share" target="_blank"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Twitter.jpg?token=AJvWvFt6R3A4WscshUZUArZAQ9kPmIHGks5V19RTwA%3D%3D" alt="Twitter" style="height:100px; Width;100px;" /></a>
+ href="http://twitter.com/share" target="_blank"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Twitter.jpg?token=AJvWvFt6R3A4WscshUZUArZAQ9kPmIHGks5V19RTwA%3D%3D" alt="Twitter" style="height:75px; Width;100px;" /></a>
 </a>
 
 <script type=“text/javascript>
@@ -262,10 +266,13 @@ document.onload = function() {
 
 </script>
 
+
+<!-- Pinterest -->
+<a class="custom-pin-button">
+<a href='javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);document.body.appendChild(e)%7D)());'><img src='https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Pintrist.jpg?token=AJvWvAXBToElrCHrkJZ4LMgn2BQoeexOks5V19yewA%3D%3D' style="height:75px;width:75px;"/></a>
+</a>
+
 </div>
-
-
-</div class="col-md-6">
 
 
 <!-- Snapifeye Widget -->
