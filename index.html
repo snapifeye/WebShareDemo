@@ -172,7 +172,7 @@
 				display:block;
 			}
 
-			#custom-pin-button a {
+			#custom-pinterest-button a {
 				display:block;
 			}
 
@@ -268,19 +268,19 @@ document.onload = function() {
 
 
 <!-- Pinterest -->
-<a class="custom-pin-button">
-	<a id=“pin_button”
-	href="http://pinterest.com/pin/create/link/?url=" target="_blank"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Pintrist.jpg?token=AJvWvBhQRDUR2xbLXOSR6J5efVCiiYWUks5V26XmwA%3D%3D" alt="Twitter" style="height:75px; Width;100px;" /></a>
-	</a>
+<a class="custom-pinterest-button">
+  <a id=“pinterest_button”
+ href="http://pinterest.com/pin/create/link/?url=" target="_blank"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Pintrist.jpg?token=AJvWvBhQRDUR2xbLXOSR6J5efVCiiYWUks5V26XmwA%3D%3D" alt="Twitter" style="height:75px; Width;100px;" /></a>
+</a>
 
-	<script type=“text/javascript>
+<script type=“text/javascript>
 
-	document.onload = function() {
-	var a = document.getElementById("pin_button");
-	a.href = “pinterest.com?pin?create?link/?url=” + window.location.href;
-	};
+document.onload = function() {
+  var a = document.getElementById("pinterest_button");
+  a.href = “twitter.com?share_url” + window.location.href;
+};
 
-	</script>
+</script>
 
 
 </div>
