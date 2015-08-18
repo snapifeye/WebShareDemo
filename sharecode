@@ -18,3 +18,7 @@
 <!-- Google Plus -->
 	<!-- Place this tag where you want the share button to render. -->
 	<div class="g-plus" data-action="share" data-annotation="none" data-height="24"></div>
+
+	Twitter javascript
+			 var twitterButton = document.getElementById("twitter_button");
+			 twitterButton.href = "http://twitter.com/share/" + window.location.href;
