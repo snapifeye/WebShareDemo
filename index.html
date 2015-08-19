@@ -28,71 +28,72 @@
 		<script type="text/javascript" src="http://events.snapifeye.com/snapifeye-widget/snapifeye-widget-all.min.js"></script>
 
 		<style>
-		html, body { margin: 0px; padding: 0px;background:#70abce;!important;font-family: Helvetica;color:black;  }
+		html, body {
+			margin: 0px;
+			padding: 0px;
+			background:#70abce;!important;
+			font-family: Helvetica;
+			color:black;
+		}
 
-			.sn-widget-gallery--info--event-name{
-				position: absolute;
-  				color: #FFFFFF;
-			  	width: 100%;
-			  	top: 10px;
-			  	height: 20px;
-				margin-top: 10px;
-			  	font-size: 30px;
-			  	line-height: 32px;
-			  	text-align: center;
-}
-
-			.sn-widget-gallery--image{
-				position: relative;
-  				height:auto;
-				width:100% !important;
-				max-width: 500px !important;
-				max-height: 500px !important;
-
-}
-
-			.sn-widget-gallery--info-container {
-				display: none;
-				position: fixed;
-				top: 0px;
-				left:0px;
-				font-family: Helvetica;
+		.sn-widget-gallery--info--event-name{
+			position: absolute;
+  		color: #FFFFFF;
+			width: 100%;
+			top: 10px;
+		  height: 20px;
+			margin-top: 10px;
+	  	font-size: 30px;
+	  	line-height: 32px;
+	  	text-align: center;
 			}
 
-			.sn-widget-gallery--image-container{
-				position: relative !important;
-  				top: 0px !important;
-	  			bottom: 0px !important;
-	  			right: 0px !important;
-	  			left: 0% !important;
-				padding:25px;
-
-
+		.sn-widget-gallery--image{
+			position: relative;
+  		height:auto;
+			width:100% !important;
+			max-width: 500px !important;
+			max-height: 500px !important;
 			}
 
-				.sn-widget-wrapper{
-				 background:#70abce !important;
-				 height:auto !important;
-
+		.sn-widget-gallery--info-container {
+			display: none;
+			position: fixed;
+			top: 0px;
+			left:0px;
+			font-family: Helvetica;
 			}
 
-			.dummy {
-				margin-top: 100%;
+		.sn-widget-gallery--image-container{
+			position: relative !important;
+  		top: 0px !important;
+			bottom: 0px !important;
+			right: 0px !important;
+			left: 0% !important;
+			padding:25px;
 			}
 
-			.smarty {
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
+		.sn-widget-wrapper{
+		 	background:#70abce !important;
+		 	height:auto !important;
 			}
 
-			.data-wrapper {
-				position: absolute;
-				width: 100%;
-				height: auto;
+		.dummy {
+			margin-top: 100%;
+			}
 
+		.smarty {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			}
+
+		.data-wrapper {
+			position: absolute;
+			width: 100%;
+			height: auto;
 			}
 
 
@@ -138,38 +139,26 @@
 			}
 
 
-				.tickets {
-					width: 45px;
-					height: 250px;
-					position: fixed;
-					left: 20%;
-					top: 60%;
+			.tickets {
+				width: 45px;
+				height: 250px;
+				position: fixed;
+				left: 20%;
+				top: 60%;
 				}
 
-			a.MyButton {
-				display:block;
-				box-shadow: 6px 6px 8px #2d2d2d;
-				font-size: 32px;
-				color: white;
-				text-align:center;
-				line-height:71px;
-				width:auto;
-				max-width:500px;
-				height:71px;
-				border-radius:3px;
-				align:center;
-				background:#f2653b;
-				font-family: Helvetica;
+			.button {
+				height:55px;
+				width:55px;
 			}
 
-						.sidebar {
+			.sidebar {
 			   position: relative;
 				 padding:25px;
 				 align:center;
 			}
 
-			.panel,.flip
-				{
+			.panel,.flip{
 				cursor:pointer;
 				z-index:1000;
 				line-height: 18px;
@@ -197,9 +186,9 @@
 				display:block;
 			}
 
-			@media (min-width: 1079px){
+	@media (min-width: 1079px){
 				.sidebar {
-					display: none;
+				display: none;
 				}
 
 				.sn-widget-gallery--image{
@@ -207,7 +196,7 @@
 					width:auto !important;
 					max-width:1080px !important;
 					max-height:1080px !important;
-			}
+					}
 		}
 
 
@@ -258,31 +247,31 @@ document.getElementById('fb-root').appendChild(e);
 
 <div class="col-md-6"><center>
 
-			<h1>Share your Photo!<h1>
-
+			<h1>Share Your Photo!<h1>
 
 <!-- Facebook Button -->
 	<script language="javascript">
 	function fbshareCurrentPage()
     	{window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
 	</script>
-	<a href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Facebook.jpg?token=AJvWvETp9_xEd4fiwb9lbCvqa4T7CfD1ks5V1y36wA%3D%3D" style="height:55px;width:auto;"></a></a>
-
+	<a href="javascript:fbshareCurrentPage()" target="_blank" alt="Facebook"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Facebook.jpg?token=AJvWvETp9_xEd4fiwb9lbCvqa4T7CfD1ks5V1y36wA%3D%3D" class="button"></a></a>
 
 <!-- Email Button -->
-        <a href="javascript:emailCurrentPage()"><img src="email.jpg" style="height:55px;width:auto;" alt="Email" /></a>
+        <a href="javascript:emailCurrentPage()"><img src="email.jpg" alt="Email" class="button" /></a>
 
 <!-- Twitter Button -->
 <a class="custom-tweet-button">
   <a id="twitter_button"
- href="https://twitter.com/share/" target="_blank"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Twitter.jpg?token=AJvWvFt6R3A4WscshUZUArZAQ9kPmIHGks5V19RTwA%3D%3D" alt="Twitter" style="height:55px; Width;100px;" /></a>
+ href="https://twitter.com/share/" target="_blank"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Twitter.jpg?token=AJvWvFt6R3A4WscshUZUArZAQ9kPmIHGks5V19RTwA%3D%3D" alt="Twitter" class="button" /></a>
 </a>
+
 
 <!-- Pinterest Button-->
 <a class="custom-pinterest-button">
   <a id="pinterest_button"
- href="" target="_blank"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Pintrist.jpg?token=AJvWvBhQRDUR2xbLXOSR6J5efVCiiYWUks5V26XmwA%3D%3D" alt="Twitter" style="height:55px; Width;100px;display:none;" /></a>
+ href="" target="_blank"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/Pintrist.jpg?token=AJvWvBhQRDUR2xbLXOSR6J5efVCiiYWUks5V26XmwA%3D%3D" alt="Twitter" style="display:none;" class="button" /></a>
 </a>
+
 
 <!-- Download Button-->
 <script>
@@ -292,11 +281,10 @@ $(document).ready(function () {
   });
 });
 </script>
-<div class="flip"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/download.jpg?token=AJvWvPq2mupkg74EKrLPemgj0QlOag_nks5V3II3wA%3D%3D" style="height:55px;width:55px;"> </div>
-<div class="panel" style="width:300px;height:auto;">1)Press and hold your finger on the image.<br>2)Click 'Save Image'</div>
+<div class="flip"><img src="https://raw.githubusercontent.com/snapifeye/WebShareDemo/gh-pages/download.jpg?token=AJvWvPq2mupkg74EKrLPemgj0QlOag_nks5V3II3wA%3D%3D" class="button"> </div>
+<div class="panel" style="width:300px;height:auto;">1)Press and hold your finger on the image<br>2)Click 'Save Image'</div>
 
 </div>
-
 
 <!-- Snapifeye Widget -->
 <center><snapifeye-widget class="50%" params="eventId: 85, period: 4000, custom: false"></snapifeye-widget>
